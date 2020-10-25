@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <ul id="demo"></ul>
+    <button type="button" onclick="add()">click me!</button>
+    <button type="button" onclick="print()">Print List!</button>
+    <script>
+
+        function add() {
+            const n = prompt("so viec can lam");
+            for (i = 0; i <= n-1; i++) {
+                let x = document.createElement("li");
+                x.innerHTML = prompt("nhap viec lam");
+                x.style.color = "red"
+                let ul=document.getElementById("demo");
+                ul.appendChild(x);
+            }
+        }
+    </script>
+</body>
+
+</html>
