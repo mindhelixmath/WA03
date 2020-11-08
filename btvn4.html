@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    
+    <form id="frm1">
+        First number: <br><input type="text" id="s1"><br>
+        Last number: <br><input type="text" id="s2"><br>
+        <button onclick="myFunction()">Try it</button>
+    </form>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var z = Number(frm1.s1.value) * Number(frm1.s2.value);
+            if (z > 500) {
+                z = Number(frm1.s1.value) + Number(frm1.s2.value);
+            }
+            
+            document.getElementById("demo").innerHTML = z;
+            
+        }
+    </script>
+
+</body>
+
+</html>
